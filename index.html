@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Aulas de JQuery</title>
+</head>
+
+<body>
+
+<h1 id="titulo">O titulo de um post qualquer</h1>
+<h3 id="subtitulo">Subtitulo meu brother, ja é 10 e meia hein</h3>
+<P class="texto1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptates praesentium
+voluptatum excepturi, nesciunt dolor eaque quae? Ea odit perspiciatis veniam magnam alias minus est quam quae
+voluptatem eveniet! Veritatis.</P>
+            <p id="texto2">karalho muleke loko o bagui ta doido de favela no baile de favela</p>
+<button id="botaozin" style="padding:60px; background-color: aqua;">Click Aqui</button>
+
+
+
+<script src="js/jquery-3.6.0.js"></script>
+
+<script>
+
+$(document).ready(function () {
+    $('#botaozin').hover(function () {
+        $(this).text("Colocando a cabecinha");
+    },
+        function () {
+            $(this).text("Tirando a cabecinha");
+            $(this).css('backgound-color','Yellow');
+        }
+    );
+
+});
+
+
+
+</script>
+
+
+</body>
+
+</html>
